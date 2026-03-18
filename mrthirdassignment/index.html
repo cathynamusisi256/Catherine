@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supplier Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div><a href="#">Dashboard</a></div>
+            <div><a href="#">Supplier Management</a></div>
+            <div><a href="#">Supplies Management</a></div>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <form action="" method="get">
+                <!-- SECTION 1 -->
+                <section>
+                    <h1>Supplier Registration</h1>
+
+                    <div class="input-container">
+                        <div class="input-section">
+                            <label for="supplyDate">Supply Date</label>
+                            <input type="date" id="supply Date" required />
+                        </div>
+
+                        <div class="input-section">
+                            <label for="Supplier Person">Supplier</label>
+                            <select id="Supplier Person" required>
+                                <option value="">Select a representative</option>
+                                <option value="1">Nalubaale Ritah</option>
+                                <option value="2">Nakanyike Ruth</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 2 -->
+                <section>
+                    <h2>Supplier Details</h2>
+
+                    <div class="input-container">
+                        <div class="input-section">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter full name" required />
+                        </div>
+
+                        <div class="input-section">
+                            <label for="phone">Phone Number</label>
+                            <input type="number" id="phone" placeholder="Enter phone number" required />
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 3 -->
+                <section>
+                    <div class="input-container">
+                        <div class="input-section">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter email" required />
+                        </div>
+
+                        <div class="input-section">
+                            <label for="customer">Customer Type</label>
+                            <select id="customer" required>
+                                <option value="" disabled selected>
+                                    Select Supplier type
+                                </option>
+                                <option value="1">Cash Supplier</option>
+                                <option value="2">Credit Supplier</option>
+                                <option value="3">Deposit Supplier</option>
+                                <option value="4">Registered Supplier</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 4 -->
+                <section>
+                    <h2>Items</h2>
+
+                    <!-- Item Row 1 -->
+                    <div class="input-container">
+                        <div class="input-section">
+                            <label for="pdt1">Pdt Id</label>
+                            <input type="text" id="pdt1" />
+                        </div>
+
+                        <div class="input-section">
+                            <label for="qty1">Quantity</label>
+                            <input type="number" id="qty1" />
+                        </div>
+
+                        <div class="input-section">
+                            <label for="price1">Unit Price</label>
+                            <input type="number" id="price1" />
+                        </div>
+                    </div>
+
+                    <!-- Item Row 2 -->
+                    <div class="input-container">
+                        <div class="input-section">
+                            <input type="text" />
+                        </div>
+
+                        <div class="input-section">
+                            <input type="number" />
+                        </div>
+
+                        <div class="input-section">
+                            <input type="number" />
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Buttons -->
+                <div class="buttons">
+                    <button type="reset" class="cancel">Cancel</button>
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

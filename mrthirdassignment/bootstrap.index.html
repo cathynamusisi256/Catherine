@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Registration Form</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="bootstrap.style.css" rel="stylesheet">
+    <style>
+        body { background-color: #f0f2f5; padding: 20px; }
+        .form-card { max-width: 900px; margin: auto; background: white; padding: 40px; border-radius: 8px; border: 1px solid #dee2e6; }
+        .section-header { font-weight: bold; margin-top: 25px; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        .btn-cancel { background-color: #6c757d; color: white; border: none; }
+        .btn-submit { background-color: #0d6efd; color: white; border: none; }
+    </style>
+</head>
+<body>
+
+<div class="form-card">
+    <h2 class="text-center mb-4">Sales Registration</h2>
+
+    <form>
+        <!-- Top Section: Date and Person -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">Sales Date</label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Sales Person</label>
+                <select class="form-select">
+                    <option selected>Select A Representative</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Customer Details Section -->
+        <div class="section-header text-center">Customer Details</div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" placeholder="Full name">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" placeholder="Enter phone number">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Type</label>
+                <select class="form-select">
+                    <option selected>Select a customer type</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Items Section -->
+        <div class="section-header text-center">Items</div>
+        
+        <!-- Item Row 1 -->
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label class="form-label small">Product ID</label>
+                <select class="form-select">
+                    <option selected>Select a product id</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label small">Quantity</label>
+                <input type="text" class="form-control" placeholder="Enter Quantity">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label small">Unit Price</label>
+                <input type="text" class="form-control" placeholder="Enter Price">
+            </div>
+        </div>
+
+        <!-- Item Row 2 -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <label class="form-label small">Product ID</label>
+                <select class="form-select">
+                    <option selected>Select a product id</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label small">Quantity</label>
+                <input type="text" class="form-control" placeholder="Enter Quantity">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label small">Unit Price</label>
+                <input type="text" class="form-control" placeholder="Enter Price">
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="d-flex justify-content-between mt-4">
+            <button type="button" class="btn btn-cancel px-5">Cancel</button>
+            <button type="submit" class="btn btn-submit px-5">Submit</button>
+        </div>
+    </form>
+</div>
+
+<!-- Bootstrap 5 JS Bundle -->
+<script src="https://cdn.jsdelivr.net"></script>
+</body>
+</html>
